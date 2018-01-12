@@ -6,7 +6,7 @@ def printf(format, *values):
 
 # crypto
 cryptos = {
-    "XMR" : 0.214744252580, # homebox wallet
+    "XMR" : 0.216192426239, # homebox wallet
     "DOGE" : 7097.4211915, # homebox wallet
     "LTC" : 0.0950063300, # coinbase
     "ETH" : 0.1920, # coinbase
