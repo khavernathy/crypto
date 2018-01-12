@@ -5,13 +5,13 @@ a python API that tracks your crypto holdings values
 
 Modify assets.py  to reflect your holdings for each coin (you can add new ones too). e.g. to add your holdings for PokeCoin (POKE), add
 
-"POKE" : 9001.0
+`"POKE" : 9001.0` to the `cryptos` array, and
 
-to the `cryptos` array, and
+`"POKE" : "https://coinmarketcap.com/currencies/pokecoin"` to the `crypto_keys` array.
 
-`"POKE" : "https://coinmarketcap.com/currencies/pokecoin"`
+Do `bash reset.sh` to reset all your holdings history (make sure you list your holdings in `reset.sh` as needed)
 
-to the `crypto_keys` array.
+Do `bash view_crypto.sh` to see a graph of all holdings value in USD over time. This assumes you have `xmgrace` (http://plasma-gate.weizmann.ac.il/Grace/doc/UsersGuide.html) installed. If not, you can view the data with Excel or other software.
 
 # Output stuff
 
