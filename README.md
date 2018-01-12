@@ -3,11 +3,15 @@ a python API that tracks your crypto holdings values
 
 # How to use
 
+Do `bash run.sh` to get the script up-and-running. Every 5 minutes it will poll the web to get your current values. You can modify this increment in `run.sh` by changing `300` to whatever (in seconds).
+
 Modify assets.py  to reflect your holdings for each coin (you can add new ones too). e.g. to add your holdings for PokeCoin (POKE), add
 
 `"POKE" : 9001.0` to the `cryptos` array, and
 
 `"POKE" : "https://coinmarketcap.com/currencies/pokecoin"` to the `crypto_keys` array.
+
+You can modify `assets.py` at any time -- you don't have to re-start the program for changes to take effect.
 
 Do `bash reset.sh` to reset all your holdings history (make sure you list your holdings in `reset.sh` as needed)
 
