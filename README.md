@@ -5,7 +5,7 @@ a python API that tracks your crypto holdings values
 
 Do `bash run.sh` to get the script up-and-running. Every 5 minutes it will poll the web to get your current values. You can modify this increment in `run.sh` by changing `300` to whatever (in seconds).
 
-Modify assets.py  to reflect your holdings for each coin (you can add new ones too). e.g. to add your holdings for PokeCoin (POKE), add
+Modify `assets.py`  to reflect your holdings for each coin (you can add new ones too). e.g. to add your holdings for PokeCoin (POKE), add
 
 `"POKE" : 9001.0` to the `cryptos` array, and
 
