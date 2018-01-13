@@ -5,55 +5,19 @@ page size 792, 612
 page scroll 5%
 page inout 5%
 link page off
-map font 8 to "Courier", "Courier"
-map font 10 to "Courier-Bold", "Courier-Bold"
-map font 11 to "Courier-BoldOblique", "Courier-BoldOblique"
-map font 9 to "Courier-Oblique", "Courier-Oblique"
-map font 14 to "Courier-Regular", "Courier-Regular"
-map font 15 to "Dingbats-Regular", "Dingbats-Regular"
-map font 4 to "Helvetica", "Helvetica"
-map font 6 to "Helvetica-Bold", "Helvetica-Bold"
-map font 7 to "Helvetica-BoldOblique", "Helvetica-BoldOblique"
-map font 5 to "Helvetica-Oblique", "Helvetica-Oblique"
-map font 20 to "NimbusMonoL-Bold", "NimbusMonoL-Bold"
-map font 21 to "NimbusMonoL-BoldOblique", "NimbusMonoL-BoldOblique"
-map font 22 to "NimbusMonoL-Regular", "NimbusMonoL-Regular"
-map font 23 to "NimbusMonoL-RegularOblique", "NimbusMonoL-RegularOblique"
-map font 24 to "NimbusRomanNo9L-Medium", "NimbusRomanNo9L-Medium"
-map font 25 to "NimbusRomanNo9L-MediumItalic", "NimbusRomanNo9L-MediumItalic"
-map font 26 to "NimbusRomanNo9L-Regular", "NimbusRomanNo9L-Regular"
-map font 27 to "NimbusRomanNo9L-RegularItalic", "NimbusRomanNo9L-RegularItalic"
-map font 28 to "NimbusSansL-Bold", "NimbusSansL-Bold"
-map font 29 to "NimbusSansL-BoldCondensed", "NimbusSansL-BoldCondensed"
-map font 30 to "NimbusSansL-BoldCondensedItalic", "NimbusSansL-BoldCondensedItalic"
-map font 31 to "NimbusSansL-BoldItalic", "NimbusSansL-BoldItalic"
-map font 32 to "NimbusSansL-Regular", "NimbusSansL-Regular"
-map font 33 to "NimbusSansL-RegularCondensed", "NimbusSansL-RegularCondensed"
-map font 34 to "NimbusSansL-RegularCondensedItalic", "NimbusSansL-RegularCondensedItalic"
-map font 35 to "NimbusSansL-RegularItalic", "NimbusSansL-RegularItalic"
-map font 36 to "StandardSymbolsL-Regular", "StandardSymbolsL-Regular"
-map font 12 to "Symbol", "Symbol"
+map font 0 to "Times-Roman", "Times-Roman"
+map font 1 to "Times-Italic", "Times-Italic"
 map font 2 to "Times-Bold", "Times-Bold"
 map font 3 to "Times-BoldItalic", "Times-BoldItalic"
-map font 1 to "Times-Italic", "Times-Italic"
-map font 0 to "Times-Roman", "Times-Roman"
-map font 42 to "URWBookmanL-DemiBold", "URWBookmanL-DemiBold"
-map font 43 to "URWBookmanL-DemiBoldItalic", "URWBookmanL-DemiBoldItalic"
-map font 44 to "URWBookmanL-Light", "URWBookmanL-Light"
-map font 45 to "URWBookmanL-LightItalic", "URWBookmanL-LightItalic"
-map font 46 to "URWChanceryL-MediumItalic", "URWChanceryL-MediumItalic"
-map font 47 to "URWGothicL-Book", "URWGothicL-Book"
-map font 48 to "URWGothicL-BookOblique", "URWGothicL-BookOblique"
-map font 49 to "URWGothicL-Demi", "URWGothicL-Demi"
-map font 50 to "URWGothicL-DemiOblique", "URWGothicL-DemiOblique"
-map font 51 to "URWPalladioL-Bold", "URWPalladioL-Bold"
-map font 52 to "URWPalladioL-BoldItalic", "URWPalladioL-BoldItalic"
-map font 53 to "URWPalladioL-Italic", "URWPalladioL-Italic"
-map font 54 to "URWPalladioL-Roman", "URWPalladioL-Roman"
-map font 55 to "Utopia-Bold", "Utopia-Bold"
-map font 56 to "Utopia-BoldItalic", "Utopia-BoldItalic"
-map font 57 to "Utopia-Italic", "Utopia-Italic"
-map font 58 to "Utopia-Regular", "Utopia-Regular"
+map font 4 to "Helvetica", "Helvetica"
+map font 5 to "Helvetica-Oblique", "Helvetica-Oblique"
+map font 6 to "Helvetica-Bold", "Helvetica-Bold"
+map font 7 to "Helvetica-BoldOblique", "Helvetica-BoldOblique"
+map font 8 to "Courier", "Courier"
+map font 9 to "Courier-Oblique", "Courier-Oblique"
+map font 10 to "Courier-Bold", "Courier-Bold"
+map font 11 to "Courier-BoldOblique", "Courier-BoldOblique"
+map font 12 to "Symbol", "Symbol"
 map font 13 to "ZapfDingbats", "ZapfDingbats"
 map color 0 to (255, 255, 255), "white"
 map color 1 to (0, 0, 0), "black"
@@ -90,7 +54,7 @@ timestamp color 1
 timestamp rot 0
 timestamp font 0
 timestamp char size 1.000000
-timestamp def "Tue Jan  9 14:44:22 2018"
+timestamp def "Fri Jan 12 22:31:32 2018"
 r0 off
 link r0 to g0
 r0 type above
@@ -137,7 +101,7 @@ g0 fixedpoint xy 0.000000, 0.000000
 g0 fixedpoint format general general
 g0 fixedpoint prec 6, 6
 with g0
-    world 2458126, 0, 2458129, 600
+    world 2458126, 0, 2458132, 600
     stack world 0, 0, 0, 0
     znorm 1
     view 0.150000, 0.150000, 1.150000, 0.850000
@@ -168,7 +132,7 @@ with g0
     xaxis  label color 1
     xaxis  label place normal
     xaxis  tick on
-    xaxis  tick major 0.5
+    xaxis  tick major 1
     xaxis  tick minor ticks 0
     xaxis  tick default 6
     xaxis  tick place rounded true
@@ -328,7 +292,7 @@ with g0
     s0 errorbar riser clip off
     s0 errorbar riser clip length 0.100000
     s0 comment "DOGE.txt"
-    s0 legend  "DOGE"
+    s0 legend  "DOGE.txt"
     s1 hidden false
     s1 type xy
     s1 symbol 1
@@ -377,7 +341,7 @@ with g0
     s1 errorbar riser clip off
     s1 errorbar riser clip length 0.100000
     s1 comment "XMR.txt"
-    s1 legend  "XMR"
+    s1 legend  "XMR.txt"
     s2 hidden false
     s2 type xy
     s2 symbol 1
@@ -426,7 +390,7 @@ with g0
     s2 errorbar riser clip off
     s2 errorbar riser clip length 0.100000
     s2 comment "BTC.txt"
-    s2 legend  "BTC"
+    s2 legend  "BTC.txt"
     s3 hidden false
     s3 type xy
     s3 symbol 1
@@ -475,7 +439,7 @@ with g0
     s3 errorbar riser clip off
     s3 errorbar riser clip length 0.100000
     s3 comment "ETH.txt"
-    s3 legend  "ETH"
+    s3 legend  "ETH.txt"
     s4 hidden false
     s4 type xy
     s4 symbol 1
@@ -524,7 +488,7 @@ with g0
     s4 errorbar riser clip off
     s4 errorbar riser clip length 0.100000
     s4 comment "LTC.txt"
-    s4 legend  "LTC"
+    s4 legend  "LTC.txt"
     s5 hidden false
     s5 type xy
     s5 symbol 1
@@ -573,7 +537,7 @@ with g0
     s5 errorbar riser clip off
     s5 errorbar riser clip length 0.100000
     s5 comment "BCH.txt"
-    s5 legend  "BCH"
+    s5 legend  "BCH.txt"
     s6 hidden false
     s6 type xy
     s6 symbol 1
@@ -622,7 +586,7 @@ with g0
     s6 errorbar riser clip off
     s6 errorbar riser clip length 0.100000
     s6 comment "HTML.txt"
-    s6 legend  "HTML"
+    s6 legend  "HTML.txt"
     s7 hidden false
     s7 type xy
     s7 symbol 1
@@ -671,7 +635,7 @@ with g0
     s7 errorbar riser clip off
     s7 errorbar riser clip length 0.100000
     s7 comment "MOON.txt"
-    s7 legend  "MOON"
+    s7 legend  "MOON.txt"
     s8 hidden false
     s8 type xy
     s8 symbol 1
@@ -720,7 +684,7 @@ with g0
     s8 errorbar riser clip off
     s8 errorbar riser clip length 0.100000
     s8 comment "LTC.txt"
-    s8 legend  "LTC"
+    s8 legend  "LTC.txt"
     s9 hidden false
     s9 type xy
     s9 symbol 1
@@ -769,4 +733,53 @@ with g0
     s9 errorbar riser clip off
     s9 errorbar riser clip length 0.100000
     s9 comment "crypto.txt"
-    s9 legend  "total"
+    s9 legend  "GBX.txt"
+    s10 hidden false
+    s10 type xy
+    s10 symbol 0
+    s10 symbol size 1.000000
+    s10 symbol color 11
+    s10 symbol pattern 1
+    s10 symbol fill color 11
+    s10 symbol fill pattern 0
+    s10 symbol linewidth 1.0
+    s10 symbol linestyle 1
+    s10 symbol char 65
+    s10 symbol char font 0
+    s10 symbol skip 0
+    s10 line type 1
+    s10 line linestyle 1
+    s10 line linewidth 1.0
+    s10 line color 11
+    s10 line pattern 1
+    s10 baseline type 0
+    s10 baseline off
+    s10 dropline off
+    s10 fill type 0
+    s10 fill rule 0
+    s10 fill color 1
+    s10 fill pattern 1
+    s10 avalue off
+    s10 avalue type 2
+    s10 avalue char size 1.000000
+    s10 avalue font 0
+    s10 avalue color 1
+    s10 avalue rot 0
+    s10 avalue format general
+    s10 avalue prec 3
+    s10 avalue prepend ""
+    s10 avalue append ""
+    s10 avalue offset 0.000000 , 0.000000
+    s10 errorbar on
+    s10 errorbar place both
+    s10 errorbar color 11
+    s10 errorbar pattern 1
+    s10 errorbar size 1.000000
+    s10 errorbar linewidth 1.0
+    s10 errorbar linestyle 1
+    s10 errorbar riser linewidth 1.0
+    s10 errorbar riser linestyle 1
+    s10 errorbar riser clip off
+    s10 errorbar riser clip length 0.100000
+    s10 comment "crypto.txt"
+    s10 legend  "crypto.txt"
