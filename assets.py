@@ -64,7 +64,8 @@ print ""
 printf("Total cryptos  = ~$%8.2f",total_crypto)
 
 # put however much USD you invested here
-initial_invest = 70.0 + 75.0 + 26.0 + 200.0
+# cashed out 20.0 for Luci PSU
+initial_invest = 70.0 + 75.0 + 26.0 + 200.0 - 20.0
 print ""
 
 printf("Total invested =  $%8.2f", initial_invest)
