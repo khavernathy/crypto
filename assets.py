@@ -6,17 +6,17 @@ def printf(format, *values):
 
 # crypto
 cryptos = {
-    "XMR" : 0.220447813159, # homebox wallet
+    "XMR" : 0.232149937966, # homebox wallet
     "DOGE" : 7097.4211915, # homebox wallet
     "LTC" : 0.0950063300, # coinbase
-    "ETH" : 0.19208946, # coinbase
+    "ETH" : 0.1711, # coinbase
     "BTC" : 0.00050552, # coinbase
     "BCH" : 0.0096397, # coinbase
     "VTC" : 0.0000000, 
     "HTML" : 5499.0,  # mac (wallet)
     "MOON" : 6660.0,   # bleutrade
     "XMG" : 0.0,  # magicoin .. no wallet yet
-    "GBX" : 0.03410145 # gobyte, mac wallet
+    "GBX" : 0.071 # gobyte, mac wallet
     }
 
 crypto_keys = {
