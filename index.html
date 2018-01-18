@@ -5,6 +5,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="./jquery.js"></script>
     <script type="text/javascript">
 
       google.charts.load('current', {'packages':['corechart']});
@@ -96,6 +97,27 @@
       }
 
     } // end crypto history loop
+
+
+    $(document).ready(function() {
+        // READ RUNLOG OUTPUT
+        var rawFile = new XMLHttpRequest();
+        file = "runlog";
+        rawFile.open("GET", file, false);
+        rawFile.onreadystatechange = function ()
+        {
+            if(rawFile.readyState === 4)
+            {
+                if(rawFile.status === 200 || rawFile.status == 0)
+                {
+                    var allText = rawFile.responseText;
+                    document.getElementById("right_form").innerHTML = allText;   
+                }
+            }
+        }
+        rawFile.send(null);
+    });
+
 
     </script>
 
