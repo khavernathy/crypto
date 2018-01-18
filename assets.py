@@ -11,7 +11,7 @@ cryptos = {
     "LTC" : 0.0950063300, # coinbase
     "ETH" : 0.1238, # coinbase
     "BTC" : 0.00050552, # coinbase
-    "BCH" : 0.0096397, # coinbase
+    "BCH" : 0.0359, # coinbase
     "VTC" : 0.0000000, 
     "HTML" : 5499.0,  # mac (wallet)
     "MOON" : 6660.0,   # bleutrade
@@ -65,7 +65,7 @@ printf("Total cryptos  = ~$%8.2f",total_crypto)
 
 # put however much USD you invested here
 # cashed out 20.0 for Luci PSU, 40 for GPU
-initial_invest = 70.0 + 75.0 + 26.0 + 200.0 - 20.0 - 40.0
+initial_invest = 70.0 + 75.0 + 26.0 + 200.0 - 20.0 - 40.0 + 50.0
 print ""
 
 printf("Total invested =  $%8.2f", initial_invest)
