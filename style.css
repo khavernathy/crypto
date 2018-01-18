@@ -1,0 +1,18 @@
+html {
+    border-top: 6px solid #4F040B;
+    border-left: 6px solid #4F040B;
+    border-right: 6px solid #4F040B;
+}
+
+body {
+    /* font-size: 11px; /* 62.5% Resets 1em to 10px */
+    font-size: 12px; /* much better */
+    font-family: Verdana, Arial, Courier, Sans-serif;
+    color: #4F040B;
+    text-align: left;
+        background: url(linen.jpg);
+        background-repeat: repeat;
+        background-attachment:fixed;
+    margin: 0px;
+    padding: 0px;
+}

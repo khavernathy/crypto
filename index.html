@@ -1,0 +1,126 @@
+<html>
+  <head>
+    
+    <title>Doug's Crypto</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      
+        function drawChart() {
+        var Coins = ["crypto", "BTC", "ETH", 
+                    "BCH", "LTC", "XMR", 
+                    "DOGE", "GBX", "MOON", 
+                    "HTML"];
+        var Colors = ['#e432b1', '#4de32a', '#28cae1', 
+                    '#f477dc', '#fbf230', '#000000', 
+                    '#ff0000', '#00ff00', '#0000ff',
+                    '#eeeeee' ];
+
+        for (x=0; x < Coins.length; x++) {
+        var data = new google.visualization.DataTable();
+        data.addColumn('date', 'Time of Day');
+        data.addColumn('number', Coins[x]);
+
+        var rawFile = new XMLHttpRequest();
+        file = Coins[x]+".txt";
+        rawFile.open("GET", file, false);
+        rawFile.onreadystatechange = function ()
+        {
+            if(rawFile.readyState === 4)
+            {
+                if(rawFile.status === 200 || rawFile.status == 0)
+                {
+                    var allText = rawFile.responseText;
+                    //alert(allText);
+                    var lineArr = allText.split('\n');
+                    
+                    // skipping first row (header row)
+                    for (i=1; i < lineArr.length; i++) {
+                        if (lineArr[i] == "") continue;
+                        //console.log("this line: "+ lineArr[i]);
+                        thisLineArr = lineArr[i].split('    '); // thisLineArr 0,1 are two columns
+                        dateTime = thisLineArr[0].split('T'); // dateTime 0, 1 are date and time
+                        //console.log("dateTime 0 = "+dateTime[0]+"; dateTime 1 = "+dateTime[1]);
+        
+                        dateParts = dateTime[0].split('-'); // dateParts 0,1,2 are Y,M,D
+                        timeParts = dateTime[1].split(':'); // timeParts 0,1,2 are h,m, s.999
+                        timeParts[2].replace(".999",""); // get rid of .999 format thing for seconds
+
+                        Y = dateParts[0]; M = dateParts[1]; D = dateParts[2];
+                        h = timeParts[0]; m = timeParts[1]; s = timeParts[2];
+                        value = parseFloat(thisLineArr[1]);
+
+                        data.addRow([new Date(Y,M,D,h,m,s,0), value]);
+                    }
+                }
+            }
+        }
+        rawFile.send(null);
+        /*if (x==0)
+            alldata = data;
+        else
+            alldata = new google.visualization.data.join(data, alldata, 'full', [[0,0]], [1], [1]);
+        console.log(alldata)
+        */
+        alldata = data;
+
+
+        var options = {
+          title: 'Crypto holdings',
+          width: 900,
+          height: 500,
+          hAxis: {
+            format: 'M/d/yy',
+            gridlines: {count: 15}
+          },
+          vAxis: {
+            gridlines: {color: 'none'},
+            minValue: 0
+          },
+          series: {
+            0: { color: Colors[x], type: 'line' },
+            //1: { color: '#e7711b', type: 'line' },
+          },
+          interpolateNulls: true
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('chart_div'+x));
+
+        chart.draw(data, options);
+
+      }
+
+    } // end crypto history loop
+
+    </script>
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+
+
+  <body>
+    <h3>Crypto web tracker v0.0 -- Douglas Franz</h3>
+    <h4>Based on <a href="https://coinmarketcap.com" target="_blank">Coin Market Cap</a></h4>
+    <div id="right_form" style="float:right; position:relative; width: 800px; border: 2px solid black;">
+        edit form goes here
+    </div>
+    <div id="chart_div0" style="width: 900px; height: 500px;"></div>
+    <div id="chart_div1" style="width: 900px; height: 500px;"></div>
+    <div id="chart_div2" style="width: 900px; height: 500px;"></div>
+    <div id="chart_div3" style="width: 900px; height: 500px;"></div>
+    <div id="chart_div4" style="width: 900px; height: 500px;"></div>
+    <div id="chart_div5" style="width: 900px; height: 500px;"></div>
+    <div id="chart_div6" style="width: 900px; height: 500px;"></div>
+    <div id="chart_div7" style="width: 900px; height: 500px;"></div>
+    <div id="chart_div8" style="width: 900px; height: 500px;"></div>
+    <div id="chart_div9" style="width: 900px; height: 500px;"></div>
+    <div id="chart_div10" style="width: 900px; height: 500px;"></div>
+    <div id="chart_div11" style="width: 900px; height: 500px;"></div>
+    <div id="chart_div12" style="width: 900px; height: 500px;"></div>
+  </body>
+</html>
