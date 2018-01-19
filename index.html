@@ -24,7 +24,7 @@
 
         for (x=0; x < Coins.length; x++) {
         var data = new google.visualization.DataTable();
-        data.addColumn('date', 'Time of Day');
+        data.addColumn('datetime', 'Time of Day');
         data.addColumn('number', Coins[x]);
 
         var rawFile = new XMLHttpRequest();
@@ -52,9 +52,14 @@
                         timeParts = dateTime[1].split(':'); // timeParts 0,1,2 are h,m, s.999
                         timeParts[2].replace(".999",""); // get rid of .999 format thing for seconds
 
-                        Y = dateParts[0]; M = dateParts[1]; D = dateParts[2];
-                        h = timeParts[0]; m = timeParts[1]; s = timeParts[2];
+                        Y = parseInt(dateParts[0]); 
+                        M = parseInt(dateParts[1])-1; // -1 bc google month starts at 0 
+                        D = parseInt(dateParts[2]);
+                        h = parseInt(timeParts[0]); 
+                        m = parseInt(timeParts[1]); 
+                        s = parseInt(timeParts[2]);
                         value = parseFloat(thisLineArr[1]);
+                        console.log(Y+" "+M+" "+D+" "+h+" "+m+ " "+ s);
 
                         data.addRow([new Date(Y,M,D,h,m,s,0), value]);
                     }
