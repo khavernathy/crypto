@@ -85,14 +85,16 @@
             gridlines: {count: 15}
           },
           vAxis: {
-            gridlines: {color: 'none'},
+            gridlines: {count: 10}, //, color: 'none'},
             minValue: 0
           },
           series: {
             0: { color: Colors[x], type: 'line' },
             //1: { color: '#e7711b', type: 'line' },
           },
-          interpolateNulls: true
+          backgroundColor: '#bbbbbb',
+          interpolateNulls: true,
+          //curveType: 'function'
         };
 
         var chart = new google.visualization.LineChart(document.getElementById('chart_div'+x));
