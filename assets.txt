@@ -1,0 +1,12 @@
+XMR    0.240938671914    https://coinmarketcap.com/currencies/monero/
+DOGE    7097.4211915    https://coinmarketcap.com/currencies/dogecoin/
+LTC    0.0950063300    https://coinmarketcap.com/currencies/litecoin/
+ETH    0.1238    https://coinmarketcap.com/currencies/ethereum/
+BTC    0.00050552    https://coinmarketcap.com/currencies/bitcoin/
+BCH    0.0030    https://coinmarketcap.com/currencies/bitcoin-cash/
+VTC    0.0000000    https://coinmarketcap.com/currencies/vertcoin/
+HTML    5499.0    https://coinmarketcap.com/currencies/htmlcoin/
+MOON    6660.0    https://coinmarketcap.com/currencies/mooncoin/
+XMG    0.0    https://coinmarketcap.com/currencies/magi/
+GBX    0.33654    https://coinmarketcap.com/currencies/gobyte/
+COSS    45.0    https://coinmarketcap.com/currencies/coss/

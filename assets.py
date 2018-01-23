@@ -6,31 +6,28 @@ def printf(format, *values):
 
 # crypto
 cryptos = {
-    "XMR" : 0.236736307930, # homebox wallet
-    "DOGE" : 7097.4211915, # homebox wallet
-    "LTC" : 0.0950063300, # coinbase
-    "ETH" : 0.1238, # coinbase
-    "BTC" : 0.00050552, # coinbase
-    "BCH" : 0.0359, # coinbase
-    "VTC" : 0.0000000,
-    "HTML" : 5499.0,  # mac (wallet)
-    "MOON" : 6660.0,   # bleutrade
-    "XMG" : 0.0,  # magicoin .. no wallet yet
-    "GBX" : 0.08813 # gobyte, mac wallet
     }
 
 crypto_keys = {
-    "XMR" : "https://coinmarketcap.com/currencies/monero/",
-    "DOGE" : "https://coinmarketcap.com/currencies/dogecoin/",
-    "LTC" : "https://coinmarketcap.com/currencies/litecoin/",
-    "ETH" : "https://coinmarketcap.com/currencies/ethereum/",
-    "BTC" : "https://coinmarketcap.com/currencies/bitcoin/",
-    "BCH" : "https://coinmarketcap.com/currencies/bitcoin-cash/",
-    "VTC" : "https://coinmarketcap.com/currencies/vertcoin/",
-    "HTML" : "https://coinmarketcap.com/currencies/htmlcoin/",
-    "MOON" : "https://coinmarketcap.com/currencies/mooncoin/",
-    "GBX" : "https://coinmarketcap.com/currencies/gobyte/"
     }
+
+# read in holdings from assets.txt
+filepath = 'assets.txt'  
+with open(filepath) as fp:  
+    line = fp.readline()
+    cnt = 1
+    while line:
+        #print("Line {}: {}".format(cnt, line.strip()))
+        line = fp.readline()
+        if (line != ""):
+            chunks = line.split()
+            #print chunks;    
+            label = chunks[0]; holdings = chunks[1]; url = chunks[2];
+            cryptos[label] = float(holdings);
+            crypto_keys[label] = url;
+            cnt += 1
+        
+
 
 total_holds = 0.0;
 total_crypto = 0.0;
