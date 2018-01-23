@@ -39,10 +39,37 @@
       google.charts.setOnLoadCallback(drawChart);
       
         function drawChart() {
-        var Coins = ["crypto", "BTC", "ETH", 
-                    "BCH", "LTC", "XMR", 
-                    "DOGE", "GBX", "MOON", 
-                    "HTML", "COSS"];
+
+            var Coins = ["crypto"];    
+
+            // READ IN CRYPTOS FOR THIS PERSON'S assets.txt
+            var rawFile = new XMLHttpRequest();
+            file = "assets.txt";
+            rawFile.open("GET", file, false);
+            rawFile.onreadystatechange = function ()
+            {
+                if(rawFile.readyState === 4)
+                {
+                    if(rawFile.status === 200 || rawFile.status == 0)
+                    {
+                        var allText = rawFile.responseText;
+                        unique_holdings = allText.split('\n');
+                        
+                        var thelength = unique_holdings.length;
+                        for (i=0; i<thelength; i++) {
+                            if (unique_holdings[i] == "") continue;
+                            columns = unique_holdings[i].split(/[ ,]+/);
+                            Coins.push(columns[0]); 
+                        }
+                    }
+                }
+                display = display + '</table><input type="submit" value="save assets" /><input type="button" onclick="addNewRow();" value="add new" /></form>';
+                document.getElementById("right_form").innerHTML = display;   
+            }
+            rawFile.send(null);
+
+
+        // add a lot of colors later (so user can have inf coinz)
         var Colors = ['#e432b1', '#4de32a', '#28cae1', 
                     '#f477dc', '#fbf230', '#000000', 
                     '#ff0000', '#00ff00', '#0000ff',
