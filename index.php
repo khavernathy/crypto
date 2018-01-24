@@ -134,7 +134,7 @@
 
 
         var options = {
-          title: Coins[x]+': $'+value.toFixed(2), // most recent value
+          title: Coins[x]+': $'+value.toFixed(2),  // most recent value
           width: 900,
           height: 500,
           hAxis: {
@@ -214,7 +214,7 @@
                     for (i=0; i<thelength; i++) {
                         if (unique_holdings[i] == "") continue;
                         columns = unique_holdings[i].split(/[ ,]+/);
-                        display = display + '<tr><td><input type="hidden" value="' + columns[0] + '" name="' + columns[0] + '_name" />' + columns[0] + '</td><td><input type="text" name="' + columns[0] + '_value" value="' + columns[1] + '" /></td><td><input type="text" name="' + columns[0] + '_url" value="' + columns[2] + '" size="45" /></td></tr>';
+                        display = display + '<tr><td><input type="hidden" value="' + columns[0] + '" name="' + columns[0] + '_name" />' + columns[0] + '</td><td><input type="text" id="' + columns[0] + '_value_box" name="' + columns[0] + '_value" value="' + columns[1] + '" /></td><td><input type="text" name="' + columns[0] + '_url" value="' + columns[2] + '" size="45" /></td></tr>';
                     }
                 }
             }
@@ -251,8 +251,12 @@
             document.getElementById("runlog_box").innerHTML = display;   
         }
         rawFile.send(null);
-        
-    });
+
+
+ //     m+ ' ... I have: ' + document.getElementById(Coins[x]+"_value_box").value,
+
+
+    }); // end document ready
 
 
     </script>
