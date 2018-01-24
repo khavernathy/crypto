@@ -6,12 +6,15 @@
 
         foreach($_POST as $key => $value)
         {
+            //echo $key.' => '.$value.'<br />';
             if (strstr($key, '_name') || strstr($key, 'NEWNAME')) {
                 //echo $key.' => '.$value.'<br />'; 
                 if (strstr($key, '_name'))
                     $thefilecontents = $thefilecontents.$value."    ".$_POST[$value.'_value']."    ".$_POST[$value.'_url'].PHP_EOL;
                 else if (strstr($key, 'NEWNAME')) {
-                    $thefilecontents = $thefilecontents.$value."    ".$_POST['NEWHOLDING']."    ".$_POST['NEWURL'].PHP_EOL;
+        
+                    $index = str_replace("NEWNAME", "", $key);
+                    $thefilecontents = $thefilecontents.$value."    ".$_POST['NEWHOLDING'.$index]."    ".$_POST['NEWURL'.$index].PHP_EOL;
                 }
             }
         }
@@ -63,17 +66,18 @@
                         }
                     }
                 }
-                display = display + '</table><input type="submit" value="save assets" /><input type="button" onclick="addNewRow();" value="add new" /></form>';
-                document.getElementById("right_form").innerHTML = display;   
             }
             rawFile.send(null);
-
+            //document.write(Coins);
 
         // add a lot of colors later (so user can have inf coinz)
         var Colors = ['#e432b1', '#4de32a', '#28cae1', 
                     '#f477dc', '#fbf230', '#000000', 
                     '#ff0000', '#00ff00', '#0000ff',
-                    '#eeeeee', '#ff0000' ];
+                    '#eeeeee', '#ff0000', '#e432b1',
+                    '#4de32a', '#28cae1', '#ff0000',
+                    '#00ff00', '#0000ff', '#eeeeee',
+                    '#ff0000', '#000000', '#ab13ba' ];
 
         for (x=0; x < Coins.length; x++) {
         var data = new google.visualization.DataTable();
@@ -160,6 +164,7 @@
     } // end crypto history loop
 
 
+    window.newRows = 0;
     // add new row (holding) function
     function addNewRow() {
         //alert('hey');
@@ -170,7 +175,7 @@
         var holdingblock = document.createTextNode('<input type="text" name="NEWHOLDING" />');
         var urlblock = document.createTextNode('<input type="text" name="NEWURL" size="45" />');
         */
-        var row = '<tr><td><input type="text" name="NEWNAME" size="5" /></td><td><input type="text" name="NEWHOLDING" /></td><td><input type="text" name="NEWURL" size="45" /></td></tr>';
+        var row = '<tr><td><input type="text" name="NEWNAME' + window.newRows.toString() + '" size="5" /></td><td><input type="text" name="NEWHOLDING' + window.newRows.toString() + '" /></td><td><input type="text" name="NEWURL' + window.newRows.toString() + '" size="45" /></td></tr>';
 
         /*td.appendChild(nameblock);
         tr.appendChild(td);
@@ -183,6 +188,7 @@
         */
         // jQuery
         $(row).appendTo("#holdings_table"); //table.append(row); //table.appendChild(tr);
+        window.newRows = window.newRows + 1;
 
         // adds a new row to table for user input.
     }
@@ -196,9 +202,9 @@
         rawFile.open("GET", file, false);
         rawFile.onreadystatechange = function ()
         {
+            var display = '<form name="assets" method="POST" action="index.php?save"><table id="holdings_table"><tr><th>Coin</th><th>Amount</th><th>CoinMarketCap URL</th></tr>';
             if(rawFile.readyState === 4)
             {
-                var display = '<form name="assets" method="POST" action="index.php?save"><table id="holdings_table"><tr><th>Coin</th><th>Amount</th><th>CoinMarketCap URL</th></tr>';
                 if(rawFile.status === 200 || rawFile.status == 0)
                 {
                     var allText = rawFile.responseText;
@@ -221,7 +227,7 @@
 
 
         // READ RUNLOG OUTPUT
-        var runlog_chunk_length = 26;
+        var runlog_chunk_length = 27;
         var rawFile = new XMLHttpRequest();
         file = "runlog";
         rawFile.open("GET", file, false);
@@ -257,7 +263,8 @@
 
   <body>
     <h3>Crypto web tracker v0.0 -- Douglas Franz</h3>
-    <h4>Based on <a href="https://coinmarketcap.com" target="_blank">Coin Market Cap</a></h4>
+    <h4>Based on <a href="https://coinmarketcap.com" target="_blank">Coin Market Cap</a> -- updates every 5 minutes.</h4>
+    <h4><a href="index.php">Refresh page</a>
     <div id="right_box" style="float:right; position:relative; width: 600px; border: 2px solid black; text-align:left;">
         <div id="right_form">
         edit form goes here
@@ -266,18 +273,21 @@
         runlog goes here
         </div>
     </div>
-    <div id="chart_div0" style="width: 900px; height: 500px;"></div>
-    <div id="chart_div1" style="width: 900px; height: 500px;"></div>
-    <div id="chart_div2" style="width: 900px; height: 500px;"></div>
-    <div id="chart_div3" style="width: 900px; height: 500px;"></div>
-    <div id="chart_div4" style="width: 900px; height: 500px;"></div>
-    <div id="chart_div5" style="width: 900px; height: 500px;"></div>
-    <div id="chart_div6" style="width: 900px; height: 500px;"></div>
-    <div id="chart_div7" style="width: 900px; height: 500px;"></div>
-    <div id="chart_div8" style="width: 900px; height: 500px;"></div>
-    <div id="chart_div9" style="width: 900px; height: 500px;"></div>
-    <div id="chart_div10" style="width: 900px; height: 500px;"></div>
-    <div id="chart_div11" style="width: 900px; height: 500px;"></div>
-    <div id="chart_div12" style="width: 900px; height: 500px;"></div>
-  </body>
+    <div id="chart_div0" class="graph" ></div>
+    <div id="chart_div1" class="graph" ></div>
+    <div id="chart_div2" class="graph" ></div>
+    <div id="chart_div3" class="graph" ></div>
+    <div id="chart_div4" class="graph" ></div>
+    <div id="chart_div5" class="graph" ></div>
+    <div id="chart_div6" class="graph" ></div>
+    <div id="chart_div7" class="graph" ></div>
+    <div id="chart_div8" class="graph" ></div>
+    <div id="chart_div9" class="graph" ></div>
+    <div id="chart_div10" class="graph" ></div>
+    <div id="chart_div11" class="graph" ></div>
+    <div id="chart_div12" class="graph" ></div>
+    <div id="chart_div13" class="graph"></div>
+    <div id="chart_div14" class="graph"></div>
+    <div id="chart_div15" class="graph"></div>  
+</body>
 </html>

@@ -13,20 +13,14 @@ crypto_keys = {
 
 # read in holdings from assets.txt
 filepath = 'assets.txt'  
-with open(filepath) as fp:  
-    line = fp.readline()
-    cnt = 1
-    while line:
-        #print("Line {}: {}".format(cnt, line.strip()))
-        line = fp.readline()
-        if (line != ""):
-            chunks = line.split()
-            #print chunks;    
-            label = chunks[0]; holdings = chunks[1]; url = chunks[2];
-            cryptos[label] = float(holdings);
-            crypto_keys[label] = url;
-            cnt += 1
-        
+f = open(filepath,'r')
+for line in f:
+    chunks = line.split()
+    #print chunks
+    label = chunks[0]; holdings = chunks[1]; url = chunks[2];
+    cryptos[label] = float(holdings)
+    crypto_keys[label] = url
+    
 
 
 total_holds = 0.0;
