@@ -18,6 +18,14 @@ body {
 }
 
 div.graph {
-    width: 700px;
-    height: 400px;
+    width: 800px;
+    height: 500px;
+}
+
+div#left_graphs {
+    width: 60%;
+}
+
+div#left_box {
+    width: 40%;
 }

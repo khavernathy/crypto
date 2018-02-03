@@ -1,7 +1,7 @@
-GBX    0.44504    https://coinmarketcap.com/currencies/gobyte/
-COSS    109.00    https://coinmarketcap.com/currencies/coss/
-XMR    0.241550990710    https://coinmarketcap.com/currencies/monero/
-DOGE    7097.4211915    https://coinmarketcap.com/currencies/dogecoin/
+GBX    1.64    https://coinmarketcap.com/currencies/gobyte/
+COSS    228    https://coinmarketcap.com/currencies/coss/
+XMR    0.242847626042    https://coinmarketcap.com/currencies/monero/
+DOGE    7106.4211915    https://coinmarketcap.com/currencies/dogecoin/
 ETH    0.0482    https://coinmarketcap.com/currencies/ethereum/
 LTC    0.0950063300    https://coinmarketcap.com/currencies/litecoin/
 BTC    0.00050552    https://coinmarketcap.com/currencies/bitcoin/

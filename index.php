@@ -214,7 +214,7 @@
                     for (i=0; i<thelength; i++) {
                         if (unique_holdings[i] == "") continue;
                         columns = unique_holdings[i].split(/[ ,]+/);
-                        display = display + '<tr><td><input type="hidden" value="' + columns[0] + '" name="' + columns[0] + '_name" />' + columns[0] + '</td><td><input type="text" id="' + columns[0] + '_value_box" name="' + columns[0] + '_value" value="' + columns[1] + '" /></td><td><input type="text" name="' + columns[0] + '_url" value="' + columns[2] + '" size="45" /></td></tr>';
+                        display = display + '<tr><td><input type="hidden" value="' + columns[0] + '" name="' + columns[0] + '_name" />' + columns[0] + '</td><td><input type="text" id="' + columns[0] + '_value_box" name="' + columns[0] + '_value" value="' + columns[1] + '" autocomplete="off" /></td><td><input type="text" name="' + columns[0] + '_url" value="' + columns[2] + '" size="45" autocomplete="off" /></td></tr>';
                     }
                 }
             }
@@ -269,29 +269,33 @@
     <h3>Crypto web tracker v0.0 -- Douglas Franz</h3>
     <h4>Based on <a href="https://coinmarketcap.com" target="_blank">Coin Market Cap</a> -- updates every 5 minutes.</h4>
     <h4><a href="index.php">Refresh page</a>
-    <div id="right_box" style="float:right; position:relative; width: 600px; border: 2px solid black; text-align:left;">
-        <div id="right_form">
-        edit form goes here
+    <div id="wrapper">
+        <div id="right_box" style="float:right; position:relative; width: 600px; border: 2px solid black; text-align:left;">
+            <div id="right_form">
+            edit form goes here
+            </div>
+            <div id="runlog_box">
+            runlog goes here
+            </div>
         </div>
-        <div id="runlog_box">
-        runlog goes here
-        </div>
+        <div id="left_graphs">
+            <div id="chart_div0" class="graph" ></div>
+            <div id="chart_div1" class="graph" ></div>
+            <div id="chart_div2" class="graph" ></div>
+            <div id="chart_div3" class="graph" ></div>
+            <div id="chart_div4" class="graph" ></div>
+            <div id="chart_div5" class="graph" ></div>
+            <div id="chart_div6" class="graph" ></div>
+            <div id="chart_div7" class="graph" ></div>
+            <div id="chart_div8" class="graph" ></div>
+            <div id="chart_div9" class="graph" ></div>
+            <div id="chart_div10" class="graph" ></div>
+            <div id="chart_div11" class="graph" ></div>
+            <div id="chart_div12" class="graph" ></div>
+            <div id="chart_div13" class="graph"></div>
+            <div id="chart_div14" class="graph"></div>
+            <div id="chart_div15" class="graph"></div> 
+        </div> 
     </div>
-    <div id="chart_div0" class="graph" ></div>
-    <div id="chart_div1" class="graph" ></div>
-    <div id="chart_div2" class="graph" ></div>
-    <div id="chart_div3" class="graph" ></div>
-    <div id="chart_div4" class="graph" ></div>
-    <div id="chart_div5" class="graph" ></div>
-    <div id="chart_div6" class="graph" ></div>
-    <div id="chart_div7" class="graph" ></div>
-    <div id="chart_div8" class="graph" ></div>
-    <div id="chart_div9" class="graph" ></div>
-    <div id="chart_div10" class="graph" ></div>
-    <div id="chart_div11" class="graph" ></div>
-    <div id="chart_div12" class="graph" ></div>
-    <div id="chart_div13" class="graph"></div>
-    <div id="chart_div14" class="graph"></div>
-    <div id="chart_div15" class="graph"></div>  
 </body>
 </html>
