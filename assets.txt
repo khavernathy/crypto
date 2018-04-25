@@ -1,13 +1,55 @@
-GBX    1.64    https://coinmarketcap.com/currencies/gobyte/
-COSS    228    https://coinmarketcap.com/currencies/coss/
-XMR    0.242847626042    https://coinmarketcap.com/currencies/monero/
-DOGE    7106.4211915    https://coinmarketcap.com/currencies/dogecoin/
-ETH    0.0482    https://coinmarketcap.com/currencies/ethereum/
-LTC    0.0950063300    https://coinmarketcap.com/currencies/litecoin/
-BTC    0.00050552    https://coinmarketcap.com/currencies/bitcoin/
-BCH    0.0030    https://coinmarketcap.com/currencies/bitcoin-cash/
-HTML    5499.0    https://coinmarketcap.com/currencies/htmlcoin/
-MOON    6660.0    https://coinmarketcap.com/currencies/mooncoin/
-XMG    0    https://coinmarketcap.com/currencies/magi/
-VTC    0    https://coinmarketcap.com/currencies/vertcoin/
-DASH    0    https://coinmarketcap.com/currencies/dash/
+ ADI	0.230819638076798	
+ ARK	0.000225156259982	https://coinmarketcap.com/currencies/ark/
+ BCH	1.05278784273247E-06	https://coinmarketcap.com/currencies/bitcoin-cash/
+ BLZ	0.000181732037547	
+ BNT	8.85909046674895E-05	https://coinmarketcap.com/currencies/bancor/
+ BPL	0.00045278699493	https://coinmarketcap.com/currencies/blockpool/
+ BTC	1.00177452249756E-05	https://coinmarketcap.com/currencies/bitcoin/
+ CAN	0.014586893504298	https://coinmarketcap.com/currencies/canyacoin/
+ COSS	1.1781480260689	https://coinmarketcap.com/currencies/coss/
+ CVC	0.000543318235819	https://coinmarketcap.com/currencies/civic/
+ DASH	7.3189794403287E-07	https://coinmarketcap.com/currencies/dash/
+ DAT	0.020822124891542	https://coinmarketcap.com/currencies/datum/
+ ENJ	0.004033838095521	https://coinmarketcap.com/currencies/enjin-coin/
+ EOS	0.000151218394978	https://coinmarketcap.com/currencies/eos/
+ ETH	0.001054936169071	https://coinmarketcap.com/currencies/ethereum/
+ FDX	0.053505352923258	https://coinmarketcap.com/currencies/fidentiax/
+ FYN	9.33174082929438E-05	https://coinmarketcap.com/currencies/fundyourselfnow/
+ GAT	0.672122431935888	https://coinmarketcap.com/currencies/gatcoin/
+ H2O	0.000246395197917	
+ HGT	2.41424967641917	https://coinmarketcap.com/currencies/hellogold/
+ ICX	0.000332204197031	https://coinmarketcap.com/currencies/icon/
+ IND	0.001152270114519	https://coinmarketcap.com/currencies/indorse-token/
+ ITT	0.019695133945539	https://coinmarketcap.com/currencies/intelligent-trading-foundation/
+ JET	0.0345555353512	https://coinmarketcap.com/currencies/jetcoin/
+ KIN	45.8266329469097	https://coinmarketcap.com/currencies/kin/
+ KNC	0.000202899769769	https://coinmarketcap.com/currencies/kyber-network/
+ LA	0.00045162316221	https://coinmarketcap.com/currencies/latoken/
+ LALA	0.067949030225827	
+ LINK	0.002994666303627	https://coinmarketcap.com/currencies/chainlink/
+ LSK	4.67986986788712E-05	https://coinmarketcap.com/currencies/lisk/
+ LTC	3.5591763323197E-05	https://coinmarketcap.com/currencies/litecoin/
+ MRK	0.089545340813435	
+ NOX	0.032745897783902	https://coinmarketcap.com/currencies/nitro/
+ OMG	4.96629780267059E-05	https://coinmarketcap.com/currencies/omisego/
+ PAY	0.000142981767119	https://coinmarketcap.com/currencies/tenx/
+ PGT	0.000176490702135	
+ PIX	0.001818568732952	https://coinmarketcap.com/currencies/lampix/
+ POE	0.00308622624037	https://coinmarketcap.com/currencies/poet/
+ PRIX	0.000578916939115	https://coinmarketcap.com/currencies/privatix/
+ REQ	0.001254886062658	https://coinmarketcap.com/currencies/request-network/
+ SENC	0.000215689572423	
+ SMDX	0.017466529313089	
+ SNM	0.001451362383034	https://coinmarketcap.com/currencies/sonm/
+ STX	0.000358227391596	https://coinmarketcap.com/currencies/stox/
+ SUB	0.001512688287081	https://coinmarketcap.com/currencies/substratum/
+ TEU	5.09024832535295E-06	
+ TIG	0.07310095887896	
+ VEN	0.000295325664867	https://coinmarketcap.com/currencies/vechain/
+ VZT	0.060481468409842	https://coinmarketcap.com/currencies/vezt/
+ WAVES	6.70797074976749E-05	https://coinmarketcap.com/currencies/waves/
+ WISH	0.013490590596414	https://coinmarketcap.com/currencies/mywish/
+ WTC	3.04425269094909E-05	https://coinmarketcap.com/currencies/walton/
+ XDCE	0.03792070887067	
+ XEM	0.002713758265849	https://coinmarketcap.com/currencies/nem/
+ ZEN	3.31675356843154E-05	https://coinmarketcap.com/currencies/zencash/
