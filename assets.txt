@@ -1,7 +1,7 @@
- ADI	0.230819638076798	
+ ADI	0.230819638076798   https://coinmarketcap.com/currencies/aditus/	
  ARK	0.000225156259982	https://coinmarketcap.com/currencies/ark/
  BCH	1.05278784273247E-06	https://coinmarketcap.com/currencies/bitcoin-cash/
- BLZ	0.000181732037547	
+ BLZ	0.000181732037547	    https://coinmarketcap.com/currencies/bluzelle/
  BNT	8.85909046674895E-05	https://coinmarketcap.com/currencies/bancor/
  BPL	0.00045278699493	https://coinmarketcap.com/currencies/blockpool/
  BTC	1.00177452249756E-05	https://coinmarketcap.com/currencies/bitcoin/
@@ -25,11 +25,11 @@
  KIN	45.8266329469097	https://coinmarketcap.com/currencies/kin/
  KNC	0.000202899769769	https://coinmarketcap.com/currencies/kyber-network/
  LA	0.00045162316221	https://coinmarketcap.com/currencies/latoken/
- LALA	0.067949030225827	
+ LALA	0.067949030225827	https://coinmarketcap.com/currencies/lala-world/
  LINK	0.002994666303627	https://coinmarketcap.com/currencies/chainlink/
  LSK	4.67986986788712E-05	https://coinmarketcap.com/currencies/lisk/
  LTC	3.5591763323197E-05	https://coinmarketcap.com/currencies/litecoin/
- MRK	0.089545340813435	
+ MRK	0.089545340813435	https://coinmarketcap.com/currencies/mark-space/
  NOX	0.032745897783902	https://coinmarketcap.com/currencies/nitro/
  OMG	4.96629780267059E-05	https://coinmarketcap.com/currencies/omisego/
  PAY	0.000142981767119	https://coinmarketcap.com/currencies/tenx/
@@ -38,18 +38,18 @@
  POE	0.00308622624037	https://coinmarketcap.com/currencies/poet/
  PRIX	0.000578916939115	https://coinmarketcap.com/currencies/privatix/
  REQ	0.001254886062658	https://coinmarketcap.com/currencies/request-network/
- SENC	0.000215689572423	
+ SENC	0.000215689572423	https://coinmarketcap.com/currencies/sentinel-chain/
  SMDX	0.017466529313089	
  SNM	0.001451362383034	https://coinmarketcap.com/currencies/sonm/
  STX	0.000358227391596	https://coinmarketcap.com/currencies/stox/
  SUB	0.001512688287081	https://coinmarketcap.com/currencies/substratum/
  TEU	5.09024832535295E-06	
- TIG	0.07310095887896	
+ TIG	0.07310095887896	https://coinmarketcap.com/currencies/tigereum/
  VEN	0.000295325664867	https://coinmarketcap.com/currencies/vechain/
  VZT	0.060481468409842	https://coinmarketcap.com/currencies/vezt/
  WAVES	6.70797074976749E-05	https://coinmarketcap.com/currencies/waves/
  WISH	0.013490590596414	https://coinmarketcap.com/currencies/mywish/
  WTC	3.04425269094909E-05	https://coinmarketcap.com/currencies/walton/
- XDCE	0.03792070887067	
+ XDCE	0.03792070887067	https://coinmarketcap.com/currencies/xinfin-network/
  XEM	0.002713758265849	https://coinmarketcap.com/currencies/nem/
  ZEN	3.31675356843154E-05	https://coinmarketcap.com/currencies/zencash/

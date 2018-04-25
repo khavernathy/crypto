@@ -27,7 +27,7 @@ for line in f:
 
 total_holds = 0.0;
 total_crypto = 0.0;
-printf("%10s  %15s    %10s    %7s", "Name", "Holdings", "Market val.", "Value")
+printf("%10s  %20s    %15s    %10s", "Name", "Holdings", "Market val.", "Value")
 for key in crypto_keys:
     link = crypto_keys[key]
     if (link != ""):   # don't do blank URLs
@@ -43,7 +43,7 @@ for key in crypto_keys:
         this_hold = float(my_holds)*float(value)
         total_holds += this_hold
         total_crypto += this_hold
-        printf("%10s: %15s @ $%10s = $%8.4f", key, my_holds, value, this_hold)
+        printf("%10s: %20s @ $%15s = $%11.4f", key, my_holds, value, this_hold)
         fname = str(key)+".txt"
         theline = str(time.strftime('%Y-%m-%dT%H:%M:%S')) + ".999    " + str(this_hold)
         with open(fname, "a") as coinfile:
@@ -56,7 +56,7 @@ with open("crypto.txt", "a") as datafile:
 
 
 print ""
-printf("Total cryptos  = ~$%8.2f",total_crypto)
+printf("Total cryptos  = ~$%8.4f",total_crypto)
 
 # put however much USD you invested here
 # cashed out 20.0 for Luci PSU, 40 for GPU
