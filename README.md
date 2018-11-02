@@ -21,6 +21,3 @@ Do `bash view_crypto.sh` to see a graph of all holdings value in USD over time. 
 
 The code outputs a neat table of your current holdings, market value, and USD value, and gives you a nice total. If you modify `initial_invest` to reflect your USD total investment, the `Gain factor` will display your net return on investment. e.g. `1.218` is a `21.8%` ROI.
 
-lmk if u have questions
-
-Dogelas
